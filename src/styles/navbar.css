@@ -1,0 +1,31 @@
+.nav-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 96px;
+    justify-content: space-between;
+    padding: 1.5rem 8rem;
+}
+
+.nav-top-right {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+.nav-top-right a.signup {
+    padding: 12px 24px;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 24px -10px rgba(153, 46, 157, 0.5);
+
+    /* border: ; */
+}
+
+@media (width<780px) {
+    .nav-top {
+        height: 115px;
+        margin-bottom: 40px;
+        padding: 56px 24px 18px 24px;
+    }
+}

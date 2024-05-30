@@ -1,0 +1,68 @@
+.choose-heading {
+    color: var(--Eminence-700, #992E9D);
+}
+
+.choose-cards {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+.choose-card {
+    padding: 20px 0 0 0;
+    position: relative;
+}
+
+.choose-card-about {
+    color: var(--Woodsmoke-500, #686972);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.choose-card-heading {
+    color: var(--Woodsmoke-950, #1B1B1D);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 108%;
+    /* 34.56px */
+}
+
+.choose-card-bg {
+    position: absolute;
+    font-family: Poppins;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(270deg, rgba(128, 0, 128, 0.25) 0%, rgba(255, 134, 76, 0.25) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: -10px;
+    left: -20px;
+}
+
+.choose-enroll {
+    max-width: 320px;
+}
+
+.choose-enroll-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (width<480px) {
+    .enroll-now {
+        padding: 12px 24px;
+        border-radius: 14px;
+    }
+}

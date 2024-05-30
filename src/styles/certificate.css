@@ -1,0 +1,363 @@
+.certificate-section {
+    max-width: 100%;
+    padding: 96px 128px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 2rem;
+}
+
+.opportunity-card {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.opportunity-card>div {
+    padding: 36px;
+    border-radius: 32px;
+    width: 50%;
+}
+
+.opportunity-card-1 {
+    position: relative;
+    aspect-ratio: 1.411;
+    height: 100%;
+}
+
+.certificate {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 1fr;
+    height: calc(100% - 80px);
+    margin: 1rem 0;
+    max-height: 321px;
+    position: absolute;
+    overflow: hidden;
+    border: 0.798px solid var(--tutedude-color-primary-20, #E9D3E9);
+    background: #FFF;
+    border-radius: 11.973px;
+    aspect-ratio: 3/2;
+
+}
+
+.certificate-1 {
+    top: 60px;
+    left: 20px;
+    z-index: 1000;
+    width: calc(100% - 40px);
+}
+
+.certificate-2 {
+    top: 40px;
+    left: 35px;
+    z-index: 500;
+    width: calc(100% - 70px);
+}
+
+.certificate-3 {
+    top: 20px;
+    left: 50px;
+    z-index: 100;
+    width: calc(100% - 100px);
+}
+
+.certificate-watermark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: .3;
+    z-index: 100;
+    display: grid;
+    grid-template-rows: repeat(12 1fr);
+    align-self: center;
+    transform: rotateZ(-45deg);
+    gap: 40px;
+    top: -10%;
+    left: -10%;
+}
+
+.watermark-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-self: center;
+    gap: 30px;
+
+}
+
+.watermark-column {
+    color: rgba(55, 73, 87, 1);
+    font-size: 1rem;
+}
+
+.certificate-left {
+    background: linear-gradient(202.82deg, #A355A3 0%, #912191 100%);
+    padding: 1rem;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.ui-ux {
+    padding: 4px;
+    width: max-content;
+    color: white;
+    border: 1px solid white;
+    font-size: 7px;
+    margin-bottom: .5rem;
+}
+
+.certificate-right {
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.certificate-left-top {
+    font-size: 5.5px;
+    text-transform: uppercase;
+    color: rgba(235, 237, 239, 1);
+}
+
+.certificate-right {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.certificate-right-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 6px;
+    color: rgba(105, 119, 129, 1);
+
+}
+
+
+.presented {
+    text-transform: uppercase;
+    font-size: 7px;
+    color: rgba(155, 164, 171, 1);
+
+}
+
+.certificate-name {
+    color: rgba(55, 73, 87, 1);
+    font-weight: 600;
+
+}
+
+.certificate-about {
+    font-family: Poppins;
+    font-size: 6.22px;
+    font-weight: 400;
+    line-height: 11.54px;
+    text-align: left;
+    color: rgba(105, 119, 129, 1);
+
+}
+
+.certificate-right-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sample {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 17.17px;
+    text-align: left;
+    color: rgba(88, 88, 88, 1);
+
+}
+
+.sign-name {
+    border-top: .5px solid gray;
+    font-size: 7px;
+    color: rgba(55, 73, 87, 1);
+    padding: .2rem 1rem 0 1rem;
+
+
+}
+
+.co-founder {
+    font-size: 5px;
+    color: rgba(155, 164, 171, 1);
+
+}
+
+.opportunity-card-2 {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.opportunity2-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
+    font-family: Poppins;
+}
+
+.woodsmoke-950 {
+    color: #1B1B1D;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.woodsmoke-700 {
+    color: var(--Woodsmoke-700, #4C4D52);
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.merits-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.merits-icon-upper {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    padding: 14px 14px 14px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: var(--Eminence-50, #FCF5FE);
+}
+
+.heading-medium {
+    display: none;
+}
+
+@media (width<1180px) {
+    .certificate-section {
+        padding: 96px 64px;
+    }
+
+    .opportunity-card>div {
+        padding: 28px;
+        border-radius: 1.5rem;
+    }
+}
+
+@media (width<890px) {
+    .certificate-section {
+        padding: 64px 36px;
+    }
+
+    .certificate-section {
+        grid-template-rows: min-content 1fr;
+    }
+
+    .opportunity-card>div {
+        width: 100%;
+    }
+
+    .opportunity-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .certificate {
+        transform: translate(-50%, -50%);
+
+        left: 50%;
+
+    }
+
+    .certificate-1 {
+        width: calc(100% - 0px);
+        height: 100%;
+        max-height: none;
+        top: 50%;
+    }
+
+    .certificate-2 {
+
+        width: calc(100% - 30px);
+        height: 100%;
+        max-height: none;
+        top: 45%;
+    }
+
+    .certificate-3 {
+        width: calc(100% - 60px);
+        height: 100%;
+        max-height: none;
+        top: 40%;
+    }
+
+
+    .opportunity-card-1 {
+        width: fit-content;
+        height: max-content;
+    }
+
+}
+
+@media (width<680px) {
+    .heading-medium {
+        display: block;
+    }
+
+    .heading-large {
+        display: none;
+    }
+
+    .certificate-section {
+        padding: 48px 24px;
+    }
+
+    .opportunity-card>div {
+        padding: 16px;
+        border-radius: 1.5rem;
+        width: 90%;
+    }
+}
+
+@media (width<580px) {}
+
+@media (width<480px) {
+    .certificate-section {
+        padding: 48px 8px;
+    }
+
+    .opportunity-card {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    }
+
+    .opportunity-card>div {
+        padding: 6px;
+        border-radius: 16px;
+        width: 100%;
+    }
+}

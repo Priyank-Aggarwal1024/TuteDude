@@ -1,0 +1,114 @@
+.faq-heading {
+    color: var(--Woodsmoke-800, #434347);
+    text-align: center;
+
+    /* tutedude-typography/Heading/medium */
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.faq-pink {
+    color: var(--Eminence-700, #992E9D);
+
+}
+
+#faq1,
+#faq2,
+#faq3,
+#faq4 {
+    display: none;
+}
+
+.faq-cards {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: stretch;
+    background: #FFF;
+    max-width: 570px;
+    border-radius: 12.082px;
+    border: 1.51px solid var(--Woodsmoke-100, #E5E5E8);
+}
+
+.faq-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Woodsmoke-800, #434347);
+    font-family: Poppins;
+    font-size: 21.143px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #434347;
+    width: 100%;
+    border-top-left-radius: 12.082px;
+    border-top-right-radius: 12.082px;
+    padding: 21.143px 24.163px;
+
+}
+
+.faq-ans {
+    color: var(--Woodsmoke-700, #4C4D52);
+    font-family: Poppins;
+    font-size: 18.122px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    padding: 24.163px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18.122px;
+    align-self: stretch;
+    border-top: 1.51px solid var(--Woodsmoke-50, #F5F5F6);
+    background: #FFF;
+    display: none;
+    border-bottom-left-radius: 12.082px;
+    border-bottom-right-radius: 12.082px;
+}
+
+.faq-minus {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.faq-label {
+    background: var(--Eminence-50, #FCF5FE);
+    color: var(--Eminence-800, #7F2781);
+
+}
+
+input[type="checkbox"]:checked+.faq-label+.faq-ans {
+    display: block;
+}
+
+input[type="checkbox"]:checked+.faq-label>.faq-minus {
+    display: block;
+}
+
+input[type="checkbox"]:checked+.faq-label>.faq-plus {
+    display: none;
+}
+
+/* @media (width<480px) {
+    .faq-card {
+        width: none;
+        max-width: 100%;
+    }
+} */

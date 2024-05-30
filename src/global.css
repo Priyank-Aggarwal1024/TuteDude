@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------------------- Global Variables --------------------------- */
+:root {
+    --bgColorPink: linear-gradient(180deg, rgb(183, 59, 190) 0%, rgb(153, 46, 157) 93.51%);
+    --bgColorLightYellow: rgba(255, 252, 234, 1);
+    --bgLightPink: rgba(252, 245, 254, 1);
+    --bgPinkLinearGradient: linear-gradient(rgba(183, 59, 190, 0.05), rgba(153, 46, 157, 0.05));
+    --bgGray: rgba(59, 59, 62, 1);
+    --txtColorPink: rgb(153, 46, 157);
+    --txtColorDarkPink: rgba(69, 13, 69, 1);
+    --txtColorYellow: rgba(187, 83, 2, 1);
+    --txtYellowLinearGradient: linear-gradient(180deg, rgb(255, 165, 11) 0%, rgb(226, 121, 0) 93.51%);
+    --txtGrayColor: rgba(104, 105, 114, 1);
+    --txtDarkGrayColor: rgba(76, 77, 82, 1);
+    --txtLightGrayColor: rgba(131, 132, 141, 1);
+    --borderLightPink: 1px solid rgba(249, 235, 252, 1);
+    --borderDarkPink: 1px solid rgba(249, 235, 252, 1);
+    --borderLightYellow: 1px solid rgba(255, 244, 197, 1);
+    --borderDarkYellow: 1px solid rgba(255, 165, 11, 1);
+}
+
+/* ------------------------ Global Classes ----------------------- */
+.bg-pink {
+    background: var(--bgColorPink);
+}
+
+.bg-light-yellow {
+    background-color: var(--bgColorLightYellow);
+}
+
+.bg-light-pink {
+    background-color: var(--bgLightPink);
+}
+
+.bg-gradient-pink {
+    background: var(--bgPinkLinearGradient);
+}
+
+.bg-gray {
+    background-color: var(--bgGray);
+}
+
+.text-pink {
+    color: var(--txtColorPink);
+}
+
+.text-dark-pink {
+    color: var(--txtColorDarkPink);
+}
+
+.text-yellow {
+    color: var(--txtColorYellow);
+}
+
+.text-gray {
+    color: var(--txtGrayColor);
+}
+
+.text-dark-gray {
+    color: var(--txtDarkGrayColor);
+}
+
+.text-light-gray {
+    color: var(--txtLightGrayColor);
+}
+
+.text-gradient-yellow {
+    color: var(--txtYellowLinearGradient);
+}
+
+.b-light-pink {
+    border: var(--borderLightPink);
+}
+
+.b-light-yellow {
+    border: var(--borderLightYellow);
+}
+
+.b-dark-pink {
+    border: var(--borderDarkPink);
+}
+
+.b-dark-yellow {
+    border: var(--borderDarkYellow);
+}
+
+.text-white {
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.f-40 {
+    font-size: 40px;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-28 {
+    font-size: 28px;
+}
+
+.f-36 {
+    font-size: 36px;
+}
+
+.f-22 {
+    font-size: 22px;
+}
+
+.f-24 {
+    font-size: 24px;
+}
+
+.c-f20 {
+    color: var(--Woodsmoke-900, #3B3B3E);
+    font-weight: 500;
+
+}
+
+.c-f12 {
+    color: var(--Woodsmoke-500, #686972);
+    font-weight: 400;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.va-middle {
+    vertical-align: middle;
+    margin: auto 10px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.section {
+    max-width: 100vw;
+    height: 100%;
+    padding: 64px 128px;
+    overflow: hidden;
+}
+
+.gradient {
+    background: linear-gradient(96deg, #B73BBE 2.09%, #FFA50B 98.26%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-heading {
+    font-size: 48px;
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 1.75rem;
+}
+
+
+@media (width<1180px) {
+    .section {
+        padding: 64px 64px;
+
+    }
+}
+
+@media (width<980px) {
+    .section {
+        padding: 48px 32px;
+    }
+
+    .f-28 {
+        font-size: 23px;
+    }
+
+    .f-20 {
+        font-size: 18px;
+    }
+
+    .f-16 {
+        font-size: 15px;
+    }
+
+    .f-22 {
+        font-size: 18px;
+    }
+}
+
+@media (width<680px) {
+    .section-heading {
+        font-size: 36px;
+    }
+
+    .section {
+        padding: 36px 24px;
+    }
+
+    .f-24 {
+        font-size: 22px;
+    }
+
+    .f-36 {
+        font-size: 30px;
+    }
+
+}
+
+@media (width<480px) {
+    .section-heading {
+        font-size: 24px;
+    }
+
+    .f-28 {
+        font-size: 18px;
+    }
+
+    .f-20 {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 28px 24px;
+    }
+
+    .f-24 {
+        font-size: 20px;
+    }
+
+    .f-16 {
+        font-size: 14px;
+    }
+
+    .f-22 {
+        font-size: 14px;
+    }
+
+    .f-36 {
+        font-size: 24px;
+    }
+}
