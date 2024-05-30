@@ -21,7 +21,7 @@ function Faq(props) {
                     </p>
                 </div>
                 <div className="faq-card">
-                    <input type="checkbox" name="faq1" id="faq2" checked />
+                    <input type="checkbox" name="faq1" id="faq2" defaultChecked />
                     <label htmlFor="faq2" className="faq-label">
                         <p className="faq-ques">Intro to figma</p>
                         <p className="faq-plus">+</p>

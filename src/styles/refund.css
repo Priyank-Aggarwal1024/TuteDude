@@ -1,8 +1,8 @@
 .refund {
     max-width: 100%;
     min-height: 1024px;
-    margin: 48px 0;
-    padding: 64px 128px;
+    /* margin: 48px 0;
+    padding: 64px 128px; */
     display: grid;
     gap: 56px;
     grid-template-columns: 1fr;
@@ -63,8 +63,8 @@
 .range-input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    height: 15px;
-    width: 15px;
+    height: 6px;
+    width: 6px;
     background: #FFC41B;
     border-radius: 50%;
     border: none;
@@ -72,33 +72,13 @@
 }
 
 .range-input::-moz-range-thumb {
-    height: 15px;
-    width: 15px;
+    height: 6px;
+    width: 6px;
     background: #FFC41B;
     border-radius: 50%;
     border: none;
     transition: .2s ease-in-out;
 }
-
-.range-input::-webkit-slider-thumb {
-    border: 2px solid white;
-}
-
-.range-input::-webkit-slider-thumb:hover {
-    box-shadow: 0 0 0 4px rgba(255, 194, 27, .1)
-}
-
-.range-input:active::-webkit-slider-thumb {
-    box-shadow: 0 0 0 6px rgba(255, 194, 27, .2)
-}
-
-.range-input:focus::-moz-range-thumb {
-    box-shadow: 0 0 0 6x rgba(255, 194, 27, .2)
-}
-
-
-
-
 
 .range {
     display: flex;
@@ -108,13 +88,11 @@
 
 .refund-design {
     position: absolute;
-    background: url('./scribble final version-24.png');
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     right: 0;
     top: 0;
-    background-size: 100% 100%;
-    transform: rotateY(-16.12deg);
+    transform: rotateY(-196deg);
 }
 
 .offer-end {
@@ -123,7 +101,6 @@
 
 .refund-step-heading {
     text-align: center;
-    font-size: 2.25rem;
     font-weight: 700;
     margin: 2rem auto;
 }
@@ -198,6 +175,12 @@
 }
 
 .step-card-heading {
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.66px;
     color: rgba(127, 39, 129, 1);
 }
 
@@ -209,7 +192,7 @@
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .step-box>img {
@@ -268,8 +251,16 @@
 }
 
 @media (width<780px) {
+    .step-card-heading {
+        font-size: 19px;
+    }
+
     .refund-card {
         min-width: 400px;
+    }
+
+    .refund-offer {
+        font-size: 25px;
     }
 
     .step-card {
@@ -329,17 +320,22 @@
 
     }
 
+    .refund-offer {
+        font-size: 22px;
+    }
+
     .refund-heading.section-heading {
         padding: 0 8px;
         text-align: left;
     }
 
     .refund-card {
-        min-width: auto;
+        min-width: unset;
+        width: 100%;
     }
 
-    .refund {
-        padding: 24px 8px;
+    .refund.section {
+        padding: 24px 24px;
     }
 
     .step-box {
@@ -353,11 +349,22 @@
     /* .step-card {
         padding: 12px;
     } */
+    .seats {
+        font-size: 14px;
+    }
+
+    .step-card-heading {
+        font-size: 16px;
+    }
 }
 
 @media (width<360px) {
     .refund-bottom-para {
         padding: 14px 10px;
 
+    }
+
+    .refund.section {
+        padding: 24px 4px;
     }
 }

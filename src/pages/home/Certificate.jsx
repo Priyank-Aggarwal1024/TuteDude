@@ -4,7 +4,7 @@ function Certificate(props) {
     const watermark = Array(12).fill(Array(8).fill("TUTEDUDE"))
     return (
         <section className="section certificate-section">
-            <h3 className="opportunity-heading section-heading text-gray heading-large">Unlock <span className="text-pink"> Industry Recognized Certificate</span></h3>
+            <h3 className="opportunity-heading section-heading heading-large">Unlock <span className="text-pink"> Industry Recognized Certificate</span></h3>
             <h3 className="opportunity-heading section-heading text-gray heading-medium">Industry Recognized <span className="text-pink"> 6 Certificates!</span></h3>
             <div className="opportunity-card">
                 <div className="opportunity-card-1">

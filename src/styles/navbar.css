@@ -13,13 +13,22 @@
     align-items: center;
 }
 
+.login {
+    text-align: right;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 .nav-top-right a.signup {
     padding: 12px 24px;
     border-radius: 1rem;
     box-shadow: 0px 8px 24px -10px rgba(153, 46, 157, 0.5);
-
-    /* border: ; */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 @media (width<780px) {

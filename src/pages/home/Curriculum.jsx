@@ -13,7 +13,7 @@ function Curriculum(props) {
             <section className="curriculum bg-light-pink">
                 <div className="curriculum-top">
                     <p className="curriculum-top-button text-pink">DATASCIENCE COURSE LEARNING PATH</p>
-                    <h2 className="curriculum-top-heading text-dark-gray"><span className="gradient">Data Science </span>&nbsp; Course Curriculum</h2>
+                    <h2 className="curriculum-top-heading section-heading text-dark-gray"><span className="gradient">Data Science </span> Course Curriculum</h2>
                 </div>
                 <div className="curriculum-middle">
                     <div className="curriculum-middle-card1">

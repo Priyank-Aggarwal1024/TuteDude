@@ -14,7 +14,7 @@ function CareerOptions(props) {
     return (
         <>
             <section className="section career">
-                <h1 className="section-heading career-heading f-36">Top career options in <span className="gradient">Data Science</span></h1>
+                <h1 className="career-heading f-36">Top career options in <span className="gradient">Data Science</span></h1>
                 <div className="career-cards">
                     <div className="career-card-1 career-card">
                         <img src={Boy} alt="Career card boy image" />

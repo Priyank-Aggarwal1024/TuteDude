@@ -8,13 +8,13 @@ function Hero(props) {
     return (
         <section className="hero section">
             <div className="overview-hero">
-                <div className="hero-iit b-dark-yellow"><img className="va-middle" src={Hat} alt="Graduate Hat" />An <b>IIT Delhi</b> Alumni Initiative</div>
-                <h1>Become an Expert in the field of <span className="text-pink">Data Science with 6 courses</span></h1>
-                <p>A specially crafted Tech Kickstarter, with 5+ extensive online courses.</p>
+                <div className="hero-iit b-dark-yellow f-20"><img className="va-middle" src={Hat} alt="Graduate Hat" />An <b>IIT Delhi</b> Alumni Initiative</div>
+                <h1 className='hero-heading'>Become an Expert in the field of <span className="text-pink">Data Science with 6 courses</span></h1>
+                <p className='f-20'>A specially crafted Tech Kickstarter, with <b className='hero-bold'>5+ extensive online courses.</b></p>
                 <div className="hero-button flex">
-                    <p className="b-light-yellow bg-light-yellow"><img className="va-middle" src={Star} alt="Star" /> Personal Mentorship</p>
-                    <p className="b-light-yellow bg-light-yellow"><img className="va-middle" src={Star} alt="Star" /> Internship Assistance</p>
-                    <p className="b-light-yellow bg-light-yellow"><img className="va-middle" src={Star} alt="Star" /> Industry Certified Courses</p>
+                    <p className="b-light-yellow bg-light-yellow hero-para-button"><img className="va-middle" src={Star} alt="Star" /> <span>Personal Mentorship</span></p>
+                    <p className="b-light-yellow bg-light-yellow hero-para-button"><img className="va-middle" src={Star} alt="Star" /> <span>Internship Assistance</span></p>
+                    <p className="b-light-yellow bg-light-yellow hero-para-button"><img className="va-middle" src={Star} alt="Star" /> <span>Industry Certified Courses</span></p>
                 </div>
                 <div className="hero-button-bottom flex">
                     <p className="text-white bg-pink enroll-now">Enroll Now for ₹2,999 <img className="va-middle" src={Vector} alt="Vector" /></p>
@@ -54,24 +54,24 @@ function Hero(props) {
             </div>
             <div className="hero-footer">
                 <div className="hero-footer-card-1">
-                    <p className="f-36 gradient text-center">20+</p>
-                    <p className="f-20 text-center">Courses</p>
+                    <p className="f-36 fw-600 gradient text-center">20+</p>
+                    <p className="f-20 text-center hero-footer-f500">Courses</p>
                 </div>
                 <div className="hero-footer-card-2">
-                    <p className="f-36 gradient text-center">40K+</p>
-                    <p className="f-20 text-center">Students Enrolled</p>
+                    <p className="f-36 fw-600 gradient text-center">40K+</p>
+                    <p className="f-20 text-center hero-footer-f500">Students Enrolled</p>
                 </div>
                 <div className="hero-footer-card-3">
-                    <p className="f-36 gradient text-center">20K+</p>
-                    <p className="f-20 text-center">Student Projects</p>
+                    <p className="f-36 fw-600 gradient text-center">20K+</p>
+                    <p className="f-20 text-center hero-footer-f500">Student Projects</p>
                 </div>
                 <div className="hero-footer-card-4">
-                    <p className="f-36 gradient text-center">100%</p>
-                    <p className="f-20 text-center">Internship Assistance</p>
+                    <p className="f-36 fw-600 gradient text-center">100%</p>
+                    <p className="f-20 text-center hero-footer-f500">Internship Assistance</p>
                 </div>
                 <div className="hero-footer-card-5">
-                    <p className="f-36 gradient text-center">250K+</p>
-                    <p className="f-20 text-center">Doubts Solved</p>
+                    <p className="f-36 fw-600 gradient text-center">250K+</p>
+                    <p className="f-20 text-center hero-footer-f500">Doubts Solved</p>
                 </div>
             </div>
         </section>

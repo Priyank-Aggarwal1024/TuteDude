@@ -6,7 +6,7 @@ function Courses(props) {
         <>
             <section className="courses">
                 <div className="course-2 courses-card">
-                    <div className="course-card-left"><h3 className="section-heading">Enroll for DataScience Bundle @₹1,499 <span className="price-change">₹2,600</span></h3>
+                    <div className="course-card-left"><h3 className="section-heading course-heading">Enroll for DataScience Bundle @₹1,499 <span className="price-change">₹2,600</span></h3>
                         <p className="course-about">Become an Expert in the data science field by enrolling into 6 Extensive courses!</p>
                         <p className="course-enroll"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                             <path d="M18.341 9.64984L10.841 2.14984C10.541 1.84984 10.1243 1.6665 9.66602 1.6665H3.83268C2.91602 1.6665 2.16602 2.4165 2.16602 3.33317V9.1665C2.16602 9.62484 2.34935 10.0415 2.65768 10.3498L10.1577 17.8498C10.4577 18.1498 10.8743 18.3332 11.3327 18.3332C11.791 18.3332 12.2077 18.1498 12.5077 17.8415L18.341 12.0082C18.6493 11.7082 18.8327 11.2915 18.8327 10.8332C18.8327 10.3748 18.641 9.94984 18.341 9.64984ZM11.3327 16.6748L3.83268 9.1665V3.33317H9.66602V3.32484L17.166 10.8248L11.3327 16.6748Z" fill="white" />

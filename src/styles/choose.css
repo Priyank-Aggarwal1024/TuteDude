@@ -65,4 +65,9 @@
         padding: 12px 24px;
         border-radius: 14px;
     }
+
+    .choose-enroll {
+        width: 100%;
+        text-align: center;
+    }
 }

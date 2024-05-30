@@ -4,7 +4,7 @@ import DoubtSolved from '../../assets/Doubts Solved in 5 min.png'
 function Doubt(props) {
     return (
         <section className="section doubt">
-            <h1 className="section-heading doubt-heading">
+            <h1 className="section-heading doubt-heading ">
                 Instant Doubt Solving
             </h1>
             <div className="doubt-cards">
