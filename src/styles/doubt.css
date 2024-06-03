@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: linear-gradient(275deg, #FFF7F7 0.74%, #FAEEFF 50.35%, #FFF7F7 86.22%);
 }
 
 .doubt-heading {
@@ -39,6 +38,14 @@
 
 .doubt-1-img {
     height: 230px;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+}
+
+.doubt-2-img {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -46,6 +53,17 @@
     .doubt-cards {
         flex-direction: column;
         gap: 36px;
+    }
+
+    .doubt-cards>div {
+        height: min-content;
+        aspect-ratio: unset;
+    }
+}
+
+@media (width<680px) {
+    .doubt-card-2>.doubt-2-img {
+        display: none;
     }
 }
 

@@ -10,47 +10,38 @@ import I6 from '../../assets/image 669.png'
 import I7 from '../../assets/image 670.png'
 import I8 from '../../assets/image 671.png'
 import I9 from '../../assets/image 672.png'
+import C1 from '../../assets/C1.png'
+import C2 from '../../assets/C2.png'
+import C3 from '../../assets/C3.png'
+import C4 from '../../assets/C4.png'
 function CareerOptions(props) {
+    const careerCard = [{ heading: "Data Analyst ", about: 'Understand business problems and use your technical & analytical skills to solve them with the help of data.', img: C1 },
+    { heading: "Machine learning Engineer ", about: 'Create and maintain rich interactive visualizations through data interpretation and analysis.', img: C2 },
+    { heading: "Business Analyst ", about: 'Uses domain knowledge and technical aspects of the data industry to drive business decisions.', img: C3 },
+    { heading: "Data Scientist ", about: 'Design, develop and test machine learning systems and implement ML algorithms.', img: C4 },
+    ]
     return (
         <>
             <section className="section career">
                 <h1 className="career-heading f-36">Top career options in <span className="gradient">Data Science</span></h1>
                 <div className="career-cards">
-                    <div className="career-card-1 career-card">
-                        <img src={Boy} alt="Career card boy image" />
-                        <div>
-                            <p className="career-lp">Data Scientist</p>
-                            <p className="career-sp">Understand business problems and use your technical & analytical skills to solve them with the help of data.</p>
-                        </div>
-                    </div>
-                    <div className="career-card-2 career-card">
-                        <img src={Boy} alt="Career card boy image" />
-                        <div>
-                            <p className="career-lp">Data Scientist</p>
-                            <p className="career-sp">Create and maintain rich interactive visualizations through data interpretation and analysis.</p>
-                        </div>
-                    </div>
-                    <div className="career-card-3 career-card">
-                        <img src={Boy} alt="Career card boy image" />
-                        <div>
-                            <p className="career-lp">Data Scientist</p>
-                            <p className="career-sp">Uses domain knowledge and technical aspects of the data industry to drive business decisions.</p>
-                        </div>
-                    </div>
-                    <div className="career-card-4 career-card">
-                        <img src={Boy} alt="Career card boy image" />
-                        <div>
-                            <p className="career-lp">Data Scientist</p>
-                            <p className="career-sp">Design, develop and test machine learning systems and implement ML algorithms.</p>
-                        </div>
-                    </div>
+                    {
+                        careerCard.map((item, idx) => (
+                            <div className="career-card-1 career-card" key={idx}>
+                                <img src={item.img} alt="Career card image" />
+                                <div>
+                                    <p className="career-lp">{item.heading}</p>
+                                    <p className="career-sp">{item.about}</p>
+                                </div>
+                            </div>
+                        ))
+                    }
+
                 </div>
             </section>
             <section className="section tools">
-                <div className="tool-button">
-                    <p>TOOLS COVERED</p>
-                </div>
-                <h1 className="tool-heading"><span className="gradient">Full Stack Developer</span>  Tools and Languages you will Learn</h1>
+
+                <h1 className="tool-heading"><span className="text-pink">Data Science</span>  Tools and Languages you will Learn</h1>
                 <div className="tool-icon">
                     <img src={I1} alt="HTML Icon" />
                     <img src={I7} alt="JS icon" />

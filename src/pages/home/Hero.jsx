@@ -53,10 +53,6 @@ function Hero(props) {
                 </div>
             </div>
             <div className="hero-footer">
-                <div className="hero-footer-card-1">
-                    <p className="f-36 fw-600 gradient text-center">20+</p>
-                    <p className="f-20 text-center hero-footer-f500">Courses</p>
-                </div>
                 <div className="hero-footer-card-2">
                     <p className="f-36 fw-600 gradient text-center">40K+</p>
                     <p className="f-20 text-center hero-footer-f500">Students Enrolled</p>

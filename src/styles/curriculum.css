@@ -43,7 +43,6 @@
 
 .curriculum-courses {
     max-width: 1184px;
-    margin: 4rem auto;
     background-color: white;
     min-height: 520px;
     border-radius: 28px;
@@ -51,7 +50,7 @@
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
-
+    margin: 0 auto;
 }
 
 .curriculum-course-card {
@@ -97,26 +96,30 @@
 .curriculum-card-about {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 25px;
+    flex-wrap: wrap;
+    row-gap: 6px;
     padding-top: 6px;
+}
+
+.curriculum-card-about svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
 }
 
 .curriculum-middle {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     max-width: 1184px;
     margin: 48px auto;
-    padding: 48px;
-    justify-content: start;
+    padding: 20px;
+    justify-content: center;
     align-items: center;
     align-content: flex-start;
-    gap: 48px 28px;
-    flex-wrap: wrap;
-    border: 1px solid #B73BBE;
-    background: #FFF;
+    gap: 28px;
+    /* flex-wrap: wrap; */
     font-family: Poppins;
-    margin-bottom: 40px;
-    border-radius: 24px;
 }
 
 .curriculum-middle span {
@@ -130,20 +133,15 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    justify-content: center;
 }
 
-
-
-@media (width<1280px) {
-    .curriculum-courses {
-        margin: auto 2rem;
-    }
+.curriculum-card-para svg {
+    width: 40px;
+    height: 40px;
 }
 
 @media (width<980px) {
-
-
-
 
     .curriculum-course-card {
         padding: 20px;
@@ -160,10 +158,6 @@
 
     .curriculum-top-button {
         padding: 16px;
-    }
-
-    .curriculum-courses {
-        margin: auto 1.5rem;
     }
 }
 
@@ -183,14 +177,20 @@
     }
 }
 
-@media (width<580px) {
+@media (width<740px) {
     .curriculum-middle {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        padding: 28px;
-        gap: 28px;
-
+        padding: 0;
+        gap: 15px;
+        margin: 25px auto;
     }
 
+    .curriculum-card-para svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (width<580px) {
     .curriculum-top-button {
         padding: 6px 12px;
     }
@@ -200,7 +200,7 @@
     }
 
     .curriculum {
-        padding: 2rem 8px;
+        padding: 44px 24px;
     }
 
     .curriculum-top {
@@ -215,14 +215,22 @@
         gap: .5rem;
     }
 
-    .curriculum-courses {
-        margin: auto 1rem;
-    }
-
     .curriculum-top-button {
         font-size: 14px;
     }
 
+    .curriculum-card-para {
+        justify-content: flex-start;
+    }
+
+
+
+}
+
+@media (width<480px) {
+    .curriculum-card-about span.f-20 {
+        font-size: 14px;
+    }
 }
 
 @media (width<360px) {
@@ -232,12 +240,6 @@
 
     .curriculum-middle {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        padding: 28px;
-        gap: 28px;
 
-    }
-
-    .curriculum-courses {
-        margin: auto 0rem;
     }
 }

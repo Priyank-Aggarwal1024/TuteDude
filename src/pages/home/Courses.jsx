@@ -6,12 +6,24 @@ function Courses(props) {
         <>
             <section className="courses">
                 <div className="course-2 courses-card">
-                    <div className="course-card-left"><h3 className="section-heading course-heading">Enroll for DataScience Bundle @₹1,499 <span className="price-change">₹2,600</span></h3>
-                        <p className="course-about">Become an Expert in the data science field by enrolling into 6 Extensive courses!</p>
-                        <p className="course-enroll"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                            <path d="M18.341 9.64984L10.841 2.14984C10.541 1.84984 10.1243 1.6665 9.66602 1.6665H3.83268C2.91602 1.6665 2.16602 2.4165 2.16602 3.33317V9.1665C2.16602 9.62484 2.34935 10.0415 2.65768 10.3498L10.1577 17.8498C10.4577 18.1498 10.8743 18.3332 11.3327 18.3332C11.791 18.3332 12.2077 18.1498 12.5077 17.8415L18.341 12.0082C18.6493 11.7082 18.8327 11.2915 18.8327 10.8332C18.8327 10.3748 18.641 9.94984 18.341 9.64984ZM11.3327 16.6748L3.83268 9.1665V3.33317H9.66602V3.32484L17.166 10.8248L11.3327 16.6748Z" fill="white" />
-                            <path d="M5.91602 6.6665C6.60637 6.6665 7.16602 6.10686 7.16602 5.4165C7.16602 4.72615 6.60637 4.1665 5.91602 4.1665C5.22566 4.1665 4.66602 4.72615 4.66602 5.4165C4.66602 6.10686 5.22566 6.6665 5.91602 6.6665Z" fill="white" />
-                        </svg>&nbsp; Enroll Now</p></div>
+                    <div className="course-card-left">
+                        <div className="course-card-left-badge">40% Off</div>
+                        <h3 className="section-heading course-heading">Data Science Bundle  </h3>
+                        <div className="courses-right-top course-small-screen"><p><img src={Tick} alt="Tick" /> Industry Standard Courses</p></div>
+                        <div className="courses-right-top course-small-screen"><p><img src={Tick} alt="Tick" /> 100% Refund Offer</p></div>
+                        <div className="courses-right-top course-small-screen"><p><img src={Tick} alt="Tick" /> Lifetime Course Access</p></div>
+                        <div className="courses-right-top course-small-screen"><p><img src={Tick} alt="Tick" /> Placement Assistance</p></div>
+                        <h3 className="section-heading course-heading">₹2,999 <span className="price-change">₹4,999</span></h3>
+                        <p className="course-about course-large-screen">Become an Expert in the data science field by enrolling into 6 Extensive courses!</p>
+                        <p className="course-enroll">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                <path d="M18.341 9.64984L10.841 2.14984C10.541 1.84984 10.1243 1.6665 9.66602 1.6665H3.83268C2.91602 1.6665 2.16602 2.4165 2.16602 3.33317V9.1665C2.16602 9.62484 2.34935 10.0415 2.65768 10.3498L10.1577 17.8498C10.4577 18.1498 10.8743 18.3332 11.3327 18.3332C11.791 18.3332 12.2077 18.1498 12.5077 17.8415L18.341 12.0082C18.6493 11.7082 18.8327 11.2915 18.8327 10.8332C18.8327 10.3748 18.641 9.94984 18.341 9.64984ZM11.3327 16.6748L3.83268 9.1665V3.33317H9.66602V3.32484L17.166 10.8248L11.3327 16.6748Z" fill="#992E9D" />
+                                <path d="M5.91602 6.6665C6.60637 6.6665 7.16602 6.10686 7.16602 5.4165C7.16602 4.72615 6.60637 4.1665 5.91602 4.1665C5.22566 4.1665 4.66602 4.72615 4.66602 5.4165C4.66602 6.10686 5.22566 6.6665 5.91602 6.6665Z" fill="#992E9D" />
+                            </svg>
+                            {" "}
+                            <span>Enroll Now</span>
+                        </p>
+                    </div>
                     <div className="course-card-right">
                         <svg xmlns="http://www.w3.org/2000/svg" className="course-design" width="221" height="131" viewBox="0 0 221 131" fill="none">
                             <path d="M113.336 57.3026C113.336 57.3026 93.3294 62.7599 95.4822 66.5734C98.9744 72.7119 127.257 77.5723 129.492 76.5845C131.726 75.5967 132.724 57.3734 129.568 52.2098C127.658 49.0425 120.474 45.5946 115.961 50.8748C114.393 52.6646 113.469 54.927 113.336 57.3026Z" fill="#FEFEFE" fillOpacity="0.5" />
@@ -26,12 +38,10 @@ function Courses(props) {
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <div className="courses-right-top"><p>Total number of courses</p><b>6</b></div>
-                        <div className="courses-right-middle"><p>Total number of Certificates</p><b>6</b></div>
-                        <div className="courses-right-bottom"><p>Access to Courses</p><b>Lifetime</b></div>
-                        <div className="courses-right-top-2"><p><img src={Tick} alt="Tick" /> 6 Extensive Online Courses</p></div>
-                        <div className="courses-right-middle-2"><p><img src={Tick} alt="Tick" /> 6 Extensive Online Courses</p></div>
-                        <div className="courses-right-bottom-2"><p><img src={Tick} alt="Tick" /> 6 Extensive Online Courses</p></div>
+                        <div className="courses-right-top"><p><img src={Tick} alt="Tick" /> Industry Standard Courses</p></div>
+                        <div className="courses-right-top"><p><img src={Tick} alt="Tick" /> 100% Refund Offer</p></div>
+                        <div className="courses-right-top"><p><img src={Tick} alt="Tick" /> Lifetime Course Access</p></div>
+                        <div className="courses-right-top"><p><img src={Tick} alt="Tick" /> Placement Assistance</p></div>
                     </div>
                 </div>
             </section>

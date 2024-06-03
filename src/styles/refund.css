@@ -4,9 +4,10 @@
     /* margin: 48px 0;
     padding: 64px 128px; */
     display: grid;
-    gap: 56px;
+    gap: 48px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, min-content);
+    background: linear-gradient(275deg, #FFF7F7 0.74%, #FAEEFF 50.35%, #FFF7F7 86.22%);
 
 }
 
@@ -15,15 +16,16 @@
 .refund-card {
     margin: 0 auto;
     min-width: 598px;
-    min-height: 200px;
+    /* min-height: 200px; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, fit-content);
-    padding: 1rem;
+    padding: 20px;
     background: linear-gradient(180deg, #9849FF 0%, #841EE3 93.51%);
     text-align: center;
     position: relative;
     border-radius: 32px;
+    gap: 10px;
 
 }
 
@@ -38,6 +40,8 @@
 
 .refund-offer {
     font-size: 28px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 
 }
 
@@ -49,7 +53,8 @@
 
 /* range 2 */
 .range-input {
-    margin-top: 10px;
+    display: block;
+    margin-top: 4px;
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
@@ -83,16 +88,20 @@
 .range {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .refund-design {
     position: absolute;
     width: 120px;
     height: 120px;
-    right: 0;
-    top: 0;
-    transform: rotateY(-196deg);
+    right: -10px;
+    top: -30px;
+    /* transform: rotateY(-196deg); */
+}
+
+.badge-text {
+    font-size: 16px;
+    text-align: center;
 }
 
 .offer-end {
@@ -202,9 +211,11 @@
 .card-badge-value {
     color: rgb(226, 121, 0);
     font-weight: 700;
+    font-size: 40px;
 }
 
 .card-badge {
+    flex-direction: column;
     gap: 12px;
     /* justify-content: betweenspace-; */
     align-items: center;
@@ -244,6 +255,13 @@
     font-weight: 700;
 }
 
+.step-card-image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (width<980px) {
     .refund {
         padding: 64px 48px;
@@ -253,6 +271,12 @@
 @media (width<780px) {
     .step-card-heading {
         font-size: 19px;
+    }
+
+    .card-badge-value {
+        color: rgb(226, 121, 0);
+        font-weight: 700;
+        font-size: 34px;
     }
 
     .refund-card {
@@ -312,12 +336,27 @@
         display: none;
     }
 
+    .refund-large-screen {
+        display: none;
+    }
 }
 
 @media (width<480px) {
+    .refund {
+        gap: 32px;
+    }
+
+
+
     .refund-bottom-para {
         padding: 14px 20px;
 
+    }
+
+    .card-badge-value {
+        color: rgb(226, 121, 0);
+        font-weight: 700;
+        font-size: 28px;
     }
 
     .refund-offer {
@@ -364,7 +403,4 @@
 
     }
 
-    .refund.section {
-        padding: 24px 4px;
-    }
 }

@@ -13,7 +13,9 @@
 
 .choose-card {
     padding: 20px 0 0 0;
-    position: relative;
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 1fr;
 }
 
 .choose-card-about {
@@ -36,18 +38,17 @@
 }
 
 .choose-card-bg {
-    position: absolute;
     font-family: Poppins;
     font-size: 80px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: linear-gradient(270deg, rgba(128, 0, 128, 0.25) 0%, rgba(255, 134, 76, 0.25) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    top: -10px;
-    left: -20px;
+    color: rgba(117, 48, 228, 0.20);
+    font-family: Poppins;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .choose-enroll {
@@ -60,11 +61,29 @@
     justify-content: center;
 }
 
-@media (width<480px) {
-    .enroll-now {
-        padding: 12px 24px;
-        border-radius: 14px;
+@media (width<680px) {
+
+    .choose-card-heading {
+        font-size: 28px;
     }
+
+    .choose-card-about {
+        font-size: 14px;
+    }
+
+    .enroll-large-screen {
+        display: none;
+
+    }
+
+    .choose-enroll {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (width<480px) {
+
 
     .choose-enroll {
         width: 100%;
